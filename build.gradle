@@ -60,7 +60,7 @@ plugins {
     id 'org.zeroturnaround.gradle.jrebel' version '1.1.10' apply false
     id 'org.springframework.boot' version '2.3.5.RELEASE' apply false
     id 'net.ltgt.errorprone' version '2.0.1' apply false
-    id 'io.swagger.core.v3.swagger-gradle-plugin' version '2.1.7' apply false
+    id 'io.swagger.core.v3.swagger-gradle-plugin' version '2.1.9' apply false
     id 'com.gorylenko.gradle-git-properties' version '2.2.4' apply false
     id 'org.asciidoctor.jvm.convert' version '3.3.2' apply false
     id 'org.asciidoctor.jvm.pdf' version '3.3.2' apply false
@@ -123,7 +123,7 @@ allprojects  {
             dependency 'com.jayway.jsonpath:json-path:2.5.0'
             dependency 'org.apache.tika:tika-core:1.26'
             dependency 'org.apache.httpcomponents:httpclient:4.5.13'
-            dependency 'io.swagger.core.v3:swagger-annotations:2.1.7'
+            dependency 'io.swagger.core.v3:swagger-annotations:2.1.8'
             dependency 'jakarta.management.j2ee:jakarta.management.j2ee-api:1.1.4'
             dependency 'jakarta.jms:jakarta.jms-api:2.0.3'
             dependency 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.3'
@@ -133,10 +133,10 @@ allprojects  {
 
             dependency 'io.github.classgraph:classgraph:4.8.104'
             dependency 'org.awaitility:awaitility:4.0.3'
-            dependency 'com.github.spotbugs:spotbugs-annotations:4.2.2'
+            dependency 'com.github.spotbugs:spotbugs-annotations:4.2.3'
             dependency 'javax.cache:cache-api:1.1.1'
             dependency 'org.mock-server:mockserver-junit-jupiter:5.11.2'
-            dependency 'org.webjars.npm:swagger-ui-dist:3.45.1'
+            dependency 'org.webjars.npm:swagger-ui-dist:3.47.1'
             dependency 'org.webjars:webjars-locator-core:0.46'
 
             // fineract client dependencies
