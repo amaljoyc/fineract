@@ -30,7 +30,7 @@ jobs:
 
       - run: ./gradlew createDB -PdbName=fineract_default
 
-      - run: TZ=Asia/Kolkata ./gradlew clean test
+      - run: TZ=Asia/Kolkata ./gradlew clean test --tests *VariableInstallmentsIntegrationTest
 
       - save_cache:
           paths:
