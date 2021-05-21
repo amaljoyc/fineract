@@ -35,3 +35,9 @@ jobs:
           paths:
             - ~/.gradle
           key: v1-dependencies-{{ checksum "build.gradle" }}
+
+workflows:
+  version: 2.1
+  build-workflow:
+    jobs:
+      - build
