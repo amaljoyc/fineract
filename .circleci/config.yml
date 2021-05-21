@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -14,7 +14,6 @@ jobs:
       # Customize the JVM maximum heap limit
       JVM_OPTS: -Xmx3200m
       TERM: dumb
-      TZ: Asia/Kolkata
 
     steps:
       - checkout
@@ -30,7 +29,7 @@ jobs:
 
       - run: ./gradlew createDB -PdbName=fineract_default
 
-      - run: ./gradlew clean test
+      - run: TZ=Asia/Kolkata ./gradlew clean test
 
       - save_cache:
           paths:
